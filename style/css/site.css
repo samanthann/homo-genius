@@ -1,0 +1,210 @@
+body, html {
+    height: 100%;
+}
+
+/*Homepage Css*/
+
+#homepage-container { 
+    background-image: url("../images/homepage-monkey.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: transparent;
+    z-index: 1000;
+    position: absolute;
+    
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+.list-unstyled{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: GoudyStout;
+    font-size: 2vw;
+    color: black;
+}
+
+.list-unstyled a {
+    color:black;
+}
+
+.list-unstyled li {
+    padding: 5px;
+    border: black 1px solid;
+    width: 100%;
+    margin: 10% 25px 15% 25px;
+}
+
+#bottom-right-corner {
+    position:fixed;
+    bottom:5px;
+    right:5px;
+    font-family: GoudyStout;
+    font-size: 1.3vw;
+}
+
+#bottom-right-corner div{
+    text-align: right;
+    padding: 5px;
+}
+
+#bottom-right-corner a{
+    background: transparent;
+    border: transparent;
+}
+
+#newsletter {
+    color:black;
+    border: black 1px solid !important;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-family: GoudyStout;
+}
+
+#title-part-1, #title-part-2{
+    width:35%;
+    font-size: 4.5vw;
+    display: inline-block;
+}
+
+#title-part-1{
+    float:left;
+}
+
+#title-part-2{
+    float:right;
+}
+
+
+/*Common page css*/
+
+.page-container {
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header{
+    width: 100%;
+    text-align: center;
+    height:20%;
+}
+
+/*Newsletter Css*/
+
+#newsletter-container {
+    background-image: url("../images/cassette-tape.jpg");
+}
+
+#newsletter-container #newsletter-title {
+    color:black;
+    font-family: Broadway;
+    font-size: 4.5vw;
+    width: 60%;
+    float: left;
+}
+
+#newsletter-form {
+    font-family: Broadway;
+    width:50%;
+    padding:0px 20px 0px 20px;
+}
+
+#email-label, #notification-label{
+    font-size: 3.5vw;
+}
+
+#email-textbox, #notification-checkboxes {
+    font-size: 2.5vw;
+}
+
+#email {
+    width:100%;
+}
+
+#notifications {
+    margin-top: 35px;
+}
+
+#notification-checkboxes input[type=checkbox]{
+    transform: scale(4) !important;
+    margin:15px;
+}
+
+#notification-footer {
+    text-align: center;
+    font-family: Broadway;
+    font-size: 3vw;
+    position:fixed;
+    bottom:30px;
+    left:40%;
+}
+
+/*Tours Css*/
+
+#tours-container { 
+    background-image: url("../images/audience-band.jpg");  
+}
+
+#tours-container #title {
+    color:white;
+    font-family: Broadway;
+    font-size: 5vw;
+}
+
+#tours-header{
+    width: 100%;
+    text-align: center;
+    height:20%;
+}
+
+#title, .home{
+    display: inline-block;
+}
+#tours-header #title {
+    width: 30%;
+    float:left;
+}
+
+.home{
+    float:right;
+    background-color: white;
+    right: 15px;
+    top: 15px;
+    position: absolute;
+    border-radius: 50%;
+    height: 85px;
+    opacity: .5;
+}
+
+.home img{
+    width:75%;
+}
+
+#tour-dates{
+    background-color: white;
+    opacity: .5;
+    margin: 130px 250px 20px 250px;
+    height:50%;
+}
