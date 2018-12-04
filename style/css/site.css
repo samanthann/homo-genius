@@ -100,9 +100,15 @@ body, html {
     border: transparent;
 }
 
-#newsletter {
+#newsletter-large {
     color:black;
     border: black 1px solid !important;
+}
+
+#newsletter-small{
+    color:black;
+    border:black 1px solid !important;
+    display: none;
 }
 
 .title {
@@ -125,9 +131,13 @@ body, html {
     float:right;
 }
 
-@media only screen and (max-width: 760px) {
-    .side-menu {
-        display: none;
+@media only screen and (max-width: 991px) {
+    #newsletter-large{
+        display:none;
+    }
+
+    #newsletter-small{
+        display: block;
     }
 }
 
@@ -171,24 +181,24 @@ body, html {
 
 #newsletter-container #newsletter-title {
     color:black;
-    font-family: Broadway;
-    font-size: 4.5vw;
+    font-family: BroadwaySCD;
+    font-size: 4rem;
     width: 60%;
     float: left;
 }
 
 #newsletter-form {
-    font-family: Broadway;
+    font-family: BroadwaySCD;
     width:50%;
     padding:0px 20px 0px 20px;
 }
 
 #email-label, #notification-label{
-    font-size: 3.5vw;
+    font-size: 3rem;
 }
 
 #email-textbox, #notification-checkboxes {
-    font-size: 2.5vw;
+    font-size: 2rem;
 }
 
 #email {
@@ -206,7 +216,7 @@ body, html {
 
 #notification-footer {
     text-align: center;
-    font-family: Broadway;
+    font-family: BroadwaySCD;
     font-size: 3vw;
     position:fixed;
     bottom:30px;
@@ -222,6 +232,22 @@ body, html {
     #notification-checkboxes input[type=checkbox]{
         transform: scale(2) !important;
     }
+
+    #newsletter-container #newsletter-title{
+        font-size:2.5rem;
+    }
+
+    #email-label, #notification-label{
+        font-size: 1.5rem;
+    }
+    
+    #email-textbox, #notification-checkboxes {
+        font-size: 1rem;
+    }
+
+    #newsletter-form {
+        width:100%;
+    }
 }
 
 /*Blog Css*/
@@ -230,9 +256,14 @@ body, html {
     background-image: url("../images/record.jpg");
 }
 
+#blog-container .row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 #blog-container #blog-title {
     color:#009EBC;
-    font-family: Broadway;
+    font-family: BroadwaySCD;
     width: 40%;
     font-size: 4rem;
     float: left;
@@ -258,35 +289,3 @@ body, html {
     color:black;
 }
 
-/*Tours Css*/
-
-#tours-container { 
-    background-image: url("../images/audience-band.jpg");  
-}
-
-#tours-container #title {
-    color:white;
-    font-family: Broadway;
-    font-size: 5vw;
-}
-
-#tours-header{
-    width: 100%;
-    text-align: center;
-    height:20%;
-}
-
-#title, .home{
-    display: inline-block;
-}
-#tours-header #title {
-    width: 30%;
-    float:left;
-}
-
-#tour-dates{
-    background-color: white;
-    opacity: .5;
-    margin: 130px 250px 20px 250px;
-    height:50%;
-}
