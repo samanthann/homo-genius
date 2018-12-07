@@ -289,3 +289,70 @@ body, html {
     color:black;
 }
 
+/*Tours Css*/
+
+#tours-container {
+    background-image: url("../images/audience-band.jpg");
+}
+
+#tours-container #tour-title {
+    color:white;
+    font-family: BroadwaySCD;
+    width: 25%;
+    font-size: 4rem;
+    float: left;
+}
+
+#events-list{
+    background: rgba(255, 255, 255, 0.8);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#tour-dates-container {
+    font-size: 3rem;
+    color:white;
+    padding-left:0px;
+    font-family: BroadwaySCD;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.tour-section-title {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    opacity: 1;
+    font-size: 2rem;
+    font-family: BroadwaySCD;
+}
+
+.btn-outline-danger {
+    color: #591F1C;
+    border-color: #591F1C;
+}
+
+.btn-outline-danger:hover {
+    background-color: #591F1C;
+    border-color: #591F1C;
+}
+
+.tour-section-item{
+    color: #591F1C;
+    font-size: 1.3rem;
+}
+
+.event-row{
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+@media (max-width:768px) {
+    .tour-section-title {
+        font-size: 1rem;
+    }
+    .tour-section-item {
+        font-size:.8rem;
+    }
+    .tour-section-item button{
+        font-size: .6rem;
+    }
+}
