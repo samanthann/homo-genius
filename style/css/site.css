@@ -176,7 +176,7 @@ body, html {
 /*Newsletter Css*/
 
 #newsletter-container {
-    background-image: url("../images/cassette-tape.jpg");
+    background-image: url("../images/audio-black-and-white.jpg");
 }
 
 #newsletter-container #newsletter-title {
@@ -292,7 +292,7 @@ body, html {
 /*Tours Css*/
 
 #tours-container {
-    background-image: url("../images/audience-band.jpg");
+    background-image: url("../images/applause-audience-band.jpg");
 }
 
 #tours-container #tour-title {
@@ -355,4 +355,69 @@ body, html {
     .tour-section-item button{
         font-size: .6rem;
     }
+}
+
+/*Music Css*/
+
+#music-container {
+    background-image: url("../images/cassette-tape.jpg");
+}
+
+#music-container #music-title {
+    color:#009EBC;
+    font-family: BroadwaySCD;
+    width: 25%;
+    font-size: 4rem;
+    float: left;
+}
+
+.album-title{
+    color:#009EBC;
+    font-size:3rem;
+}
+
+#album-image{
+    text-align: center;
+}
+
+.active-song{
+    text-align: center;
+}
+
+.active-song-title{
+    font-size: 2rem;
+    color: #009EBC;
+}
+
+.music-controls img{
+    width:35px;
+}
+
+.active-song img {
+    width:100px;
+}
+
+.next-image{
+    transform: rotateY(180deg);
+}
+
+.music-controls {
+    text-align: right;
+}
+
+.main-song-row{
+    border-bottom: grey 10px solid;
+    border-radius: 10px;
+}
+
+.song-row div{
+    padding:10px;
+}
+
+.buy-song{
+    text-align: right;
+}
+
+.song-row{
+    border-bottom: grey 1px solid;
 }
