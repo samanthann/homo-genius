@@ -54,12 +54,12 @@ body, html {
     padding: 5px;
     border: black 1px solid;
     width: 100%;
-    margin: 10% 25px 15% 25px;
+    margin: 10% 25px 0% 25px;
 }
 
 @media (max-width: 991px) {
     .list-unstyled li {
-        margin: 10% 0px 15% 0px;
+        margin: 10% 0px 0% 0px;
     }
 
     .list-unstyled {
@@ -420,4 +420,24 @@ body, html {
 
 .song-row{
     border-bottom: grey 1px solid;
+}
+
+/*About Css*/
+
+#about-container {
+    background-image: url("../images/music.jpg");
+}
+
+#about-container #about-title {
+    color:black;
+    font-family: BroadwaySCD;
+    width: 25%;
+    font-size: 4rem;
+    float: left;
+}
+
+#about {
+    background: rgba(0, 158, 188);
+    padding: 30px;
+    border-radius: 10px;
 }
